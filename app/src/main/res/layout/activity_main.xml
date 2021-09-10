@@ -25,26 +25,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_height="481dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <!--        CakeView is a custom SurfaceView that is defined in the app's source code -->
         <cs301.birthdaycake.CakeView
             android:id="@+id/cakeview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="2" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="127dp"
+        android:layout_height="69dp"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="635dp"
+            android:layout_width="572dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -58,7 +58,8 @@
                 android:id="@+id/seekBar12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:max="3"
+                android:progress="2" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:checked="true"
                 android:text="Frosting" />
 
             <Switch
@@ -78,11 +80,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:checked="true"
                 android:text="Candles" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="206dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -98,6 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="goodbye"
                 android:text="Goodbye" />
         </LinearLayout>
     </LinearLayout>
